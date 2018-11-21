@@ -48,6 +48,7 @@ def checkout(cart, coupons)
         if total >= 100
           newTotal = total * 0.10
           total - newTotal
+        end
     end
   end
   return total
