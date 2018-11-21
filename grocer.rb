@@ -42,10 +42,10 @@ def checkout(cart, coupons)
   total = 0
   cart_hash = consolidate_cart(cart)
     if cart_hash.length >= 1
-    coupons = apply_coupons(cart_hash, coupons)
+    coupons2 = apply_coupons(cart_hash, coupons)
       apply_clearance(coupons).each do |item, details|
-        if coupons
-        total += details[:price] * coupons
+        if coupons2
+        total += details[:price] * coupons2
      print coupons
      print total
     end
