@@ -44,6 +44,7 @@ def checkout(cart, coupons)
     if cart_hash.length >= 1
     coupons = apply_coupons(cart_hash, coupons)
       apply_clearance(coupons).each do |item, details|
+        if coupons
         total += details[:price]
      print coupons
      print total
