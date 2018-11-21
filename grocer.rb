@@ -39,7 +39,7 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
-  total = nil
+  total = 0
   cart_hash = consolidate_cart(cart)
     if cart_hash.length >= 1
     coupons = apply_coupons(cart_hash, coupons)
