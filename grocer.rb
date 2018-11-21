@@ -46,3 +46,4 @@ def checkout(cart, coupons)
         total += details[:price]
   end
 end
+end
