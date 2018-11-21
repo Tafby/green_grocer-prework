@@ -40,8 +40,9 @@ end
 
 def checkout(cart, coupons)
   cart_hash = consolidate_cart(cart)
+  coupons = apply_coupons(cart, coupons)
     if cart_hash.length >= 1
-      apply_coupons(cart_hash, coupons)
+      coupons
       apply_clearance(cart_hash)
   end
 end
